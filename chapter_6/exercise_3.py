@@ -2,13 +2,16 @@ def first(word):
     # returns the first character of the argument
     return word[0]
 
+
 def last(word):
     # returns the last character of the argument
     return word[-1]
 
+
 def middle(word):
     # returns the middle characters of the argument (everything except first and last)
     return word[1:-1]
+
 
 def is_palindrome(testword):
     if len(testword) <= 1:
@@ -19,6 +22,7 @@ def is_palindrome(testword):
         return False
     return is_palindrome(middle(testword))
     # send back the middle bit for recursive testing
+
 
 def is_palindrome2(testword):
     reverseword = ''
@@ -36,4 +40,3 @@ for i in (test1, test2, test3):
     print(' First function -', i, 'is a palindrome:', is_palindrome(i))
     print('Second function -', i, 'is a palindrome:', is_palindrome2(i))
     print()
-
