@@ -21,18 +21,12 @@ def is_palindrome(testword):
     # send back the middle bit for recursive testing
 
 def is_palindrome2(testword):
-
     reverseword = ''
-
     for i in range(len(testword), 0, -1):
         # loop through the argument, right to left
         reverseword = reverseword + testword[i-1:i]
         # build a new string which is the reverse of the argument
-
-    if testword == reverseword:
-        return True
-    else:
-        return False
+    return testword == reverseword
 
 test1 = 'madamimadam'
 test2 = 'fruitful'
